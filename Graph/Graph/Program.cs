@@ -128,6 +128,19 @@ namespace Graph
 
     public class Program
     {
+
+        public static int Sum(Tree<int> intTree)
+        {
+            int sum = 0;
+
+            foreach (var elem in intTree)
+            {
+                sum += elem.data;
+            }
+
+            return sum;
+        }
+
         public static void Main()
         {
             var tree = new Tree<string>();
