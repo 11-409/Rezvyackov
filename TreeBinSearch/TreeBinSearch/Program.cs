@@ -1,4 +1,4 @@
-﻿namespace BinarySearchTree
+﻿namespace TreeBinSearch
 {
     public class Node
     {
@@ -14,7 +14,7 @@
         }
     }
 
-    public class BST
+    public class TBS
     {
         public Node Root { get; private set; }
 
@@ -70,13 +70,13 @@
     {
         static void Main(string[] args)
         {
-            var bst = new BST();
-            bst.Insert(5);
-            bst.Insert(3);
-            bst.Insert(7);
+            var tbs = new TBS();
+            tbs.Insert(5);
+            tbs.Insert(3);
+            tbs.Insert(7);
 
-            Console.WriteLine("Contains 3: " + bst.Contains(3));
-            Console.WriteLine("Contains 10: " + bst.Contains(10));
+            Console.WriteLine("Contains 3: " + tbs.Contains(3));
+            Console.WriteLine("Contains 10: " + tbs.Contains(10));
         }
     }
 }
